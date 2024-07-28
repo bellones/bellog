@@ -2,6 +2,7 @@ import { NativeStackNavigationOptions } from '@react-navigation/native-stack'
 import {
    CreateAccountScreen,
    ForgotPasswordScreen,
+   LandingScreen,
    LoginScreen,
    ProfileScreen,
    SplashScreen,
@@ -21,7 +22,7 @@ export const routes = {
    },
 
    Landing: {
-      component: SplashScreen,
+      component: LandingScreen,
       props: {},
       options: {headerShown: false, ...options},
    },

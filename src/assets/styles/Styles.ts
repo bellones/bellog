@@ -5,7 +5,7 @@ const {width} = Dimensions.get('window')
 export const styles = StyleSheet.create({
    backIcon: {
       width: responsiveWidth(6),
-      color: 'white',
+      color: 'gray',
    },
    imageContainer: {
       ...StyleSheet.absoluteFillObject,
@@ -55,42 +55,6 @@ export const styles = StyleSheet.create({
       top: 0,
    },
 
-   overlayImage: {
-      width: 180,
-      height: 180,
-      resizeMode: 'contain',
-      position: 'absolute',
-      top: 110,
-      left: 20,
-   },
-   overlayImageBB: {
-      width: 180,
-      height: 180,
-      resizeMode: 'contain',
-      position: 'absolute',
-      top: 110,
-      left: 50,
-   },
-
-   wrapper: {},
-   slide: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-   },
-   dot: {
-      backgroundColor: 'gray',
-      width: 8,
-      height: 8,
-      borderRadius: 4,
-      marginLeft: 3,
-      marginRight: 3,
-      marginTop: 3,
-      marginBottom: 3,
-   },
-   activeDot: {
-      backgroundColor: 'white', // active dot color
-   },
    rigthIcon: {
       color: 'white',
       marginRight: 12,
@@ -116,29 +80,7 @@ export const styles = StyleSheet.create({
       borderColor: 'red',
       borderWidth: 1,
    },
-   loginLogo: {
-      width: 180,
-      height: 180,
-      marginTop: 100,
-   },
-   slides: {
-      width: width,
-      height: 300,
-      resizeMode: 'contain',
-      marginTop: -200,
-   },
-
-   progressBar: {
-      height: '100%',
-      backgroundColor: 'white',
-   },
-   progressContainer: {
-      width: '100%',
-      height: 4,
-      backgroundColor: '#393939',
-      overflow: 'hidden',
-      marginTop: 24,
-   },
+   
    checkbox: {
       width: 20,
       height: 20,
@@ -171,17 +113,48 @@ export const styles = StyleSheet.create({
       borderTopRightRadius: 32,
    },
 
-   otpTextContainer: {
-      color: 'white',
-      fontFamily: 'TitilliumWeb-Regular',
-      borderWidth: 0,
-
-   },
-   otpContainer: {
-      borderWidth: 0,
-      borderBottomWidth: 1,
-   },
    normalWidth: {
       width: '90%',
-   }
+   },
+   itemWitdh: {
+      width: '96%',
+      justifyContent: 'center',
+      alignItems: 'center',
+
+   },
+   commonBackground: {
+      backgroundColor: '#1F1B35',
+   },
+   redBackground: {
+      backgroundColor: '#E21238',
+   },
+   logoImage : {
+      width: responsiveWidth(20),
+      height: responsiveHeight(10),
+      resizeMode: 'contain',
+   },
+   redvector: {
+      width: responsiveWidth(10),
+      height: responsiveHeight(10),
+      resizeMode: 'contain',
+      marginTop: -80
+   },
+   paddingGlobal: {
+      padding: responsiveHeight(2),
+    },
+
+    bannerImage: {
+      width: width,
+      height: 500,
+      marginTop: -16,
+      resizeMode: 'contain',
+    },
+
+      googleIcon: {
+         width: 48,
+         height: 48,
+         resizeMode: 'contain',
+      },
+
+   
 })
