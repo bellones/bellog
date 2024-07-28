@@ -30,6 +30,9 @@ export const styles = StyleSheet.create({
    backText: {
       fontSize: responsiveWidth(6),
    },
+   headerText: {
+      fontSize: responsiveWidth(5),
+   },
    normaltext: {
       fontSize: responsiveWidth(3.2),
       fontWeight: 'normal',
@@ -80,7 +83,7 @@ export const styles = StyleSheet.create({
       borderColor: 'red',
       borderWidth: 1,
    },
-   
+
    checkbox: {
       width: 20,
       height: 20,
@@ -120,7 +123,6 @@ export const styles = StyleSheet.create({
       width: '96%',
       justifyContent: 'center',
       alignItems: 'center',
-
    },
    commonBackground: {
       backgroundColor: '#1F1B35',
@@ -128,7 +130,7 @@ export const styles = StyleSheet.create({
    redBackground: {
       backgroundColor: '#E21238',
    },
-   logoImage : {
+   logoImage: {
       width: responsiveWidth(20),
       height: responsiveHeight(10),
       resizeMode: 'contain',
@@ -137,24 +139,30 @@ export const styles = StyleSheet.create({
       width: responsiveWidth(10),
       height: responsiveHeight(10),
       resizeMode: 'contain',
-      marginTop: -80
+      marginTop: -80,
    },
    paddingGlobal: {
       padding: responsiveHeight(2),
-    },
+   },
 
-    bannerImage: {
+   bannerImage: {
       width: width,
       height: 500,
       marginTop: -16,
       resizeMode: 'contain',
-    },
+   },
 
-      googleIcon: {
-         width: 48,
-         height: 48,
-         resizeMode: 'contain',
-      },
+   googleIcon: {
+      width: 48,
+      height: 48,
+      resizeMode: 'contain',
+   },
 
+   textLogo: {
+      width: width * .75,
+      height: 175,
+      resizeMode: 'contain',
+      alignSelf: 'center',
+   },
    
 })
