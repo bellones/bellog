@@ -4,13 +4,14 @@ import { BackButton } from '@components/BackButton'
 import { AppStatusBar } from '@components/StatusBar'
 import { textlogo } from '@utils/constants'
 import React from 'react'
-import { Image, KeyboardAvoidingView } from 'react-native'
+import { Image, KeyboardAvoidingView, SafeAreaView } from 'react-native'
 import { LoginForm } from './components/LoginForm'
 
 export const LoginScreen: React.FC = () => {
    return (
-      <Background className="bg-white w-96 h-full">
+      <Background className="bg-white h-full">
          <KeyboardAvoidingView>
+         <SafeAreaView>
             <AppStatusBar />
 
             <Row className="flex-row items-center mt-4">
@@ -29,6 +30,7 @@ export const LoginScreen: React.FC = () => {
             </NormalText>
 
             <LoginForm />
+            </SafeAreaView>
          </KeyboardAvoidingView>
       </Background>
    )

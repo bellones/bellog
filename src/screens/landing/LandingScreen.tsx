@@ -29,7 +29,7 @@ export const LandingScreen: React.FC = () => {
                <Image source={banner1} style={styles.bannerImage} />
 
                <Button
-                  className="bg-white rounded-xl h-12 w-80 items-center justify-center  mt-8 border border-gray-400"
+                  className="bg-white rounded-md h-12 w-96 items-center justify-center  mt-8 border border-gray-400"
                   onPress={() => {}}>
                   {false ? (
                      <ActivityIndicator color={'black'} />
@@ -49,17 +49,17 @@ export const LandingScreen: React.FC = () => {
                </Button>
 
                <Row className="flex-row items-center justify-center mt-4 mb-4">
-                  <Container className="border border-gray-300 w-36 h-0  mr-2" />
+                  <Container className="border border-gray-300 w-40 h-0  mr-2" />
                   <NormalText
                      style={[styles.callText, fontStyles.MontSerratMedium]}
                      className="text-gray-500">
                      ou
                   </NormalText>
-                  <Container className="border border-gray-300 w-36 h-0 ml-2" />
+                  <Container className="border border-gray-300 w-40 h-0 ml-2" />
                </Row>
                <Button
                   style={styles.redBackground}
-                  className="rounded-xl h-12 w-80 items-center justify-center"
+                  className="rounded-md h-12 w-96 items-center justify-center"
                   onPress={navigateToLogin}>
                   {false ? (
                      <ActivityIndicator color={'white'} />

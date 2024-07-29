@@ -1,7 +1,7 @@
 import { responsiveHeight, responsiveWidth } from '@utils/constants'
 import { Dimensions, StyleSheet } from 'react-native'
 
-const {width} = Dimensions.get('window')
+const {width, height} = Dimensions.get('window')
 export const styles = StyleSheet.create({
    backIcon: {
       width: responsiveWidth(6),
@@ -147,8 +147,8 @@ export const styles = StyleSheet.create({
 
    bannerImage: {
       width: width,
-      height: 500,
-      marginTop: -16,
+      height: height * 0.6,
+      marginTop: -10,
       resizeMode: 'contain',
    },
 
@@ -163,6 +163,12 @@ export const styles = StyleSheet.create({
       height: 175,
       resizeMode: 'contain',
       alignSelf: 'center',
+   },
+   amico: {
+      width: width,
+      resizeMode: 'contain',
+      alignSelf: 'center',
+      marginTop: 32,
    },
    
 })

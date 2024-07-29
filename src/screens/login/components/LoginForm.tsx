@@ -120,7 +120,7 @@ export const LoginForm: React.FC = () => {
             )}
          </InputContainer>
          <Button
-            className="rounded-md h-12 items-center justify-center mt-4 bottom-0"
+            className="rounded-md h-12 items-center justify-center mt-8 bottom-0"
             style={styles.redBackground}
             onPress={handleLogin}>
             {isLoading ? (
