@@ -147,7 +147,7 @@ export const styles = StyleSheet.create({
 
    bannerImage: {
       width: width,
-      height: height * 0.6,
+      height:  height * 0.62,
       marginTop: -10,
       resizeMode: 'contain',
    },
